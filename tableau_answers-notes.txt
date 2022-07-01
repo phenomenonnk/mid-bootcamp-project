@@ -1,0 +1,43 @@
+story of the regression tableau
+https://public.tableau.com/views/StoryRegressiontableau/StoryRegressiontableau?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
+
+dashboard of the regression tableau
+https://public.tableau.com/views/DashboardRegressiontableau/DashboardRegressiontableau?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
+
+1. we convert to measures the variables Waterfront, View, Condition.
+we can also add Zipcode and Grade
+
+2. price vs number of bedrooms: most of the observations that are expensive are
+between 4 and 6 bedrooms, seems like normal distribution
+
+price vs number of bathrooms: there are no specific elements and trends,
+only that people tend to pay more for houses with bathrooms>2.
+A polynomial trend line gives us r2 score 0,324
+
+price vs condition: seems that the houses with condition 3,4,5 have signifficantly
+higher prices from the houses with condition 1,2.
+We can understand it better if we make 2 Clusters according to the prices
+
+price vs floors: houses with 2 floors tend to be more expensive.
+On the other hand houses with more than 3 floors tend to be cheaper.
+
+price vs grade: we have an almost exponential increase for the two variables.
+(the exponential r2 score for the trend line is 0,48, a little bit better is
+the polynomial r2 score for k=3- 0,49)
+We can notice that the amounts are proportional amounts,
+so when the grade increases then the price increases as well and the opposite
+when the grade decreases then the price decreases, as well.
+Of course we can notice that people tend to pay more for houses with high grades.
+
+price vs view: seems that there is no significant difference for the pair view-price,
+we can check it with clustering by price.
+Houses with view 4 tend to be more expensive
+
+price vs waterfront: houses with waterfront tend to be a littl bit more expensive,
+we can understand it better if instead of price we use average price,
+we can notice higher density in high prices for houses with waterfront 
+
+9. Most of the houses were built between 1960-1990 (7233 houses) and then 
+between 1990-2015 (6648). In every category the prices of the houses decrease.
+The rate of change differs per category, we notice that we have a small rate of chance in 
+category A and high in categories C and D. 
